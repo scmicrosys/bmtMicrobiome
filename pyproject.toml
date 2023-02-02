@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "microbiome"
+version = “1.0.0”
+description = ""
+authors = [“silviac]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+biopython = "^1.78"
+click = "^7.1.2"
+setuptools = "^50.3.0"
+typer = {extras = ["all"], version = "^0.3.2"}
+postgres = "^3.0.0"
+sqlalchemy = "^1.3.19"
+sqlalchemy-utils = "^0.36.8"
+pip-autoremove = "^0.9.1"
+
+[tool.poetry.dev-dependencies]
+jupyter-contrib-nbextensions = "^0.5.1"
+ipywidgets = "^7.5.1"
+ipython = "^7.18.1"
+jupyterlab = "^2.2.7"
+autopep8 = "^1.5.4"
+black = {version = "^20.8b1", allow-prereleases = true}
+flake8 = "^3.8.3"
+pytest = "^6.1.0"
+jupyter = "^1.0.0"
+tabulate = "^0.8.7"
+click-spinner = "^0.1.10"
+widgetsnbextension = "^3.5.1"
+jupyterlab-server = "^1.2.0"
+ipykernel = "^5.3.4"
+
+
+[tool.poetry.scripts]
+microbiome = "microbiome.console:app"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
